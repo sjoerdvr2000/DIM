@@ -57,30 +57,41 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  
+  Niet of slecht bedienbaar met toetsebord.
+  Werkt slecht met screenreader.
+
+  De webpagina werkt redelijk als je kleuren blind bent alleen de blauwe en paarse angrams zien er het zelfde uit.
+  
+  Het contrast op de pagina is groot texst is vaak wel klijn.
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  De screenreader kan het meerdendeel van de pagina niet lezen, de pagina bestaat uit div elementen die geen waarden hebben voor de screen reader en die niet met tab kunnen worden geselecteerd.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
+  Sematiese html schrijven afbeeldingen met beschrijvingen gebruiken in de plaats van div elementen sectoins en articels kunnen hier ook bij helpen. 
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  Werkt niet goed somige elementen laten wel zien dat ze geselecteerd zijn maar het meerden deel niet.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  states toevoegen zo dat de usser kan zien wat hij/zij geselcteerd heeft
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  Deze werkte helemaal niet met een standaart laptop toetsebord.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Een meganies toetsebord gebruiken met een stijve veer zou hier helpen.
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  Hier haden we wijnig tot geen problemen er zijn een aantal elementen de engrams die een verandering in kleur nodig hebben maar voor de rest niet zo veel wel wordt de texst heel klijn.
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  texst vergroten naar min 0.8em en standaart 1em engrams kleur aan passen.
 </details>
 
 

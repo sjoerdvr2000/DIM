@@ -18,8 +18,8 @@ button, summary {
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text:#cccccc;
+	--color-background:#212136;
 }
 
 
@@ -32,8 +32,113 @@ button, summary {
 
 /* jouw code */
 
+
 body {
   color:var(--color-text);
   background-color:var(--color-background);
 }
 
+header{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap:1em;
+	margin-bottom: 1em;
+	max-width: 40em;
+	min-height: 44px;
+	
+}
+
+
+main section nav{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap:1em;
+	
+}
+
+nav section{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 1.3em;
+	display:flex;
+	flex-wrap: wrap;
+	max-width: 30em;
+	min-width: 25em;
+	justify-content: center;
+}
+nav>section:first-child{
+	background-image:url("../images/achtergrond-titan.jpg") ;
+	background-repeat: no-repeat;
+	background-size:;
+}
+
+nav>section:nth-child(2){
+	background-image:url("../images/achtergrond-warlock.jpg") ;
+	background-repeat: no-repeat;
+	background-size:;
+}
+
+nav>section:nth-child(3){
+	background-image:url("../images/achtergrond-hunter.jpg") ;
+	background-repeat: no-repeat;
+	background-size:;
+}
+
+nav>section:nth-child(4){
+	background-color: rgb(49, 50, 51);
+	max-width: 40em;
+	min-width: 30em;
+	
+}
+
+
+main>section section{
+	grid-gap: 1.3em;
+	display:flex;
+	max-width: 30em;
+	min-width: 25em;
+	justify-content: center;
+}
+
+
+main>section>div{
+	display: flex;
+	flex-direction: row;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1.3em;
+	align-items: center;
+}
+
+div>section>section{
+	max-height: 5em;
+}
+
+main>section>div>section>section>img{
+max-height: 1em;
+}
+
+main>section>div>section>section>h5{
+	min-height: 1em;
+	margin: 0;
+	}
+
+
+
+main:nth-child(2):first-child{
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 15em;
+	}
+	
+main:nth-child(2):first-child img,div{
+		max-height:4em;
+	}
+main:nth-child(2):nth-child(2){
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 15em;
+}
+
+main:nth-child(2):nth-child(2) img{
+	max-height:4em;
+}
