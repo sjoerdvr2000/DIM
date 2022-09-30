@@ -241,7 +241,7 @@ de oplosing zou een clas='goud' voor gebruiken de goude afbeeldingen komen over 
 
   ### Stand van zaken
   Het is gelukt om de web pagina resonsive te maken, mobiel heeft nu een carosel
-<img src="readme-images/mobiel_sijl.png" width="2em" alt="mobiel_sijling">
+<img src="readme-images/mobiel_sijl.png" width="375px" alt="mobiel_sijling">
 ik moet mijn tweede pagina nog afmaken de html is grotendeels klaar(er ontbreken een nog een paar afbeeldingen).
 daar naast wil ik nog een dark mode toevoegen. Ikk heb verder gewerkt aan de html en css van de tweede pagina nu moet ik nog:
 -controleren of dat ik alle secties een heading heb gegeven.
