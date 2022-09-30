@@ -1,0 +1,202 @@
+main{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 2em;
+}
+main>section{
+	display: grid;
+	grid-template-rows:.04fr .04fr .1fr .1fr .1fr; 
+	grid-gap: 2em;
+	
+}
+section>:nth-child(2) li{
+	display: grid;
+	grid-template-columns:6em 4em 4em 4em 2em;
+	grid-template-rows:1fr 1fr .125fr;
+	grid-gap: .125em;
+}
+
+section>:nth-child(2) li h2,h3,p{/*stijling personages*/
+	margin: 0;
+	margin-top: .5em;
+}
+
+main :nth-child(2)>:nth-child(2)>li{/*banners titan*/
+	background-image:url(../images/achtergrond-titan.jpg);
+	background-repeat: no-repeat;
+}
+main :nth-child(3)>:nth-child(2)>li{/*banners warlock*/
+	background-image:url(../images/achtergrond-warlock.jpg);
+	background-repeat: no-repeat;
+}
+main :nth-child(4)>:nth-child(2)>li{/*banners hunter*/
+	background-image:url(../images/achtergrond-hunter.jpg);
+	background-repeat: no-repeat;
+}
+main :nth-child(5)>:nth-child(2)>li{/*banners vault*/
+	background:var(--background-volt);
+}
+
+section>:nth-child(2)>li h2{
+grid-row:1;
+grid-column:2;
+}
+section>:nth-child(2)>li p{
+grid-row:1;
+grid-column:4;
+}
+section>:nth-child(2)>li h3{
+grid-row:2;
+grid-column:2;
+}/*stijling personages*/
+
+main>:nth-child(5)>:nth-child(2)>li :first-child{/* stijling vault*/
+	grid-row:1;
+	grid-column:1;	
+}
+main>:nth-child(5)>:nth-child(2)>li :nth-child(3){
+	grid-row:1;
+	grid-column:3;	
+}
+main>:nth-child(5)>:nth-child(2)>li :nth-child(5){
+	grid-row:1;
+	grid-column:5;	
+}
+main>:nth-child(5)>:nth-child(2)>li :nth-child(7){
+	grid-row:2;
+	grid-column:2;	
+}/* stijling vault*/
+
+
+
+section>:nth-child(n+4){/*inventory grid*/
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-gap: 1.5em;
+}
+main>:nth-child(5)>:last-child{
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-gap: 1.5em;
+}
+
+section>:nth-child(n+4)>li>img{
+	max-width: 4.5em;
+}
+main>:nth-child(5)>:nth-child(3)>li>img{
+	max-width: 4.5em;
+}/*inventory grid*/
+
+
+
+main>section>ol{/*power berekening*/
+	display: grid;
+	grid-template-columns:8em 8em 8em;
+	grid-gap: .125em;
+}
+
+main>section>ol>li{
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	grid-gap: .125em;
+}
+main>section>ol>li>img{
+max-width: 3em;
+min-width: 1.75em;
+margin: .125em;
+}/*power berekening*/
+
+/*media qwerie start*/
+
+
+@media all and (max-width: 1700px){
+	
+	main {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: .5fr .5fr;
+    	grid-gap: 6em;
+	} 
+	main>:nth-child(5){
+		grid-row: 2;
+		grid-column: 1;
+	}
+	main>:nth-child(n+4){
+		min-width: 20em;
+	}
+}
+
+@media all and (max-width: 1375px){
+	
+	main {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: .5fr .5fr;
+    	grid-gap: 6em;
+	} 
+	main>:nth-child(4){
+		grid-row: 2;
+		grid-column: 1;
+	}
+
+	main>:nth-child(5){
+		grid-row: 2;
+		grid-column: 2;
+	}
+	main>:nth-child(n+4){
+		min-width: 20em;
+	}
+}
+
+
+
+
+@media all and (max-width: 720px){
+
+	header>a,button{
+		min-width: 6em;
+		max-width: 8em;
+	}
+	header>a>img{
+		max-width: 8em;
+	}
+	
+	main {
+		grid-template-columns: 120% 120% 120% 120%;
+    	grid-gap: 6em;
+		overflow-x:auto;/*code bron: oefening 13 https://codepen.io/shooft/pen/VwXXNea*/
+		scroll-snap-type: x mandatory;
+		overscroll-behavior: contain auto;
+		-webkit-overflow-scrolling: touch;/*laat de intesiteid van de swipe bepalen hover je door de carocel gaat*/
+	} /*code bron: oefening 13 https://codepen.io/shooft/pen/VwXXNea*/
+	main>:nth-child(5){
+		grid-row: 1;
+		grid-column: 4;
+	}
+	main>:nth-child(4){
+		grid-row: 1;
+		grid-column: 3;
+	}
+
+	main>section{/*code bron: oefening 13 https://codepen.io/shooft/pen/VwXXNea*/
+		scroll-snap-align: center;
+	}/*code bron: oefening 13 https://codepen.io/shooft/pen/VwXXNea*/
+
+	section>:nth-child(n+4)>li>img{
+		max-width: 5em;
+	}
+	main>:nth-child(5)>:nth-child(3)>li>img{
+		max-width: 5em;
+	}
+
+	section>:nth-child(n+4) {
+		grid-template-columns: 4em 4em 4em 4em;
+		grid-template-rows: 4em 4em 4em 4em;
+	}
+	main>:nth-child(5)>:nth-child(3) {
+		grid-template-columns:4em 4em 4em 4em ;
+		grid-template-rows: 4em 4em 4em 4em 4em 4em 4em;
+	}
+}
+
+
