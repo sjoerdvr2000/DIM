@@ -102,13 +102,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/groot_scherm.png" width="375px" alt="breakdown van de hele pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ### de hele pagina mobiel: 
+  <img src="readme-images/mobile_scherm.png" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### navigatie groot scherm: 
+  <img src="readme-images/navigatie_groot.png" width="375px" alt="breakdown van nog een dynamisch deel">
+
+  ### navigatie mobiel:
+  <img src="readme-images/navigatie_mobiel.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -122,14 +125,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  vragen stelen ging moeizaam ik moet me zelf aanwennen om eerder en vaaker iets te vragen.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
+  | ---kopt mijn html| ---wat moet ik veranderen       | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
@@ -138,10 +141,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1 Probeer gridb meer te gebruiken.
-  - punt 2 
-  - nog een punt
-  - ...
+  - punt 1 Probeer grid meer te gebruiken.
+  - punt 2 schrijf meteen nete code.
 
 </details>
 
@@ -156,6 +157,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  
   Ben deze week ziek geweest en weet niet zeker of dat ik nog op schema lig.
   Heb veel met grid gewerkt en heb nu het gevoel dat ik het aardig in de vingers heb.
 
@@ -172,9 +174,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - veranderen structuur naar colommen alles buiten de header moet in 4 colommen worden gezet als de pagina klijner wordt gaat hij over naar een carosel(media querie).
+  nav moet geen nav zijn maar een ul.
+  section in de header mag een nav zijn.
 - ...
 
 </details>
@@ -190,30 +192,42 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  mijn menu moet in de html meteen na de knop waar mee je hem opent anders is het heel raar als je er door heen tabt
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  Toevoegen van headings aan alle secties anders is het onmogelijk om met een screen reader op een logiese manier te navigeren.
+  
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+als je het menu opent via het toetsebord en je wil naar de menu items tabben ga je eerst alle andere buttons en links af voor dat je bij de menu items komt.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+oplosing:
+mijn menu moet in de html meteen na de knop waar mee je hem opent anders is het heel raar als je er door heen tabt
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  We haden geen probleem met het navigeren van de web pagina met elastiekjes. 
+  Ik heb er voor gekozen om de afbeeldingen waar je op moet kunnen druken/kliken groter te maken
+  spcaifiek op mobiel formaat dit geeft de gebruiker meer ruimten om mis te kliken en tog te krijgen.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Met shocks word het heel lastig zeker op de toetseborden van onze laptops. 
+  Een ding dat zou kunnen helpen is een mechanies toetsebord met aanslag op de trugkomst indepaats van aan komst,
+  dit in kombinatie met een stijve toets weerstand zou het makelijker maken om de pagina te bedienen.
 
-
+  Ik weet zelf niet goed hoe behalven door items grooter te maken het makelijker kan maken
+  voor iemand die hier last van heeft. Ik zal zeker zelf nog litratuur hier over opzoeken en hier een vraag overstelen tijdens het volgende voortgangs gesprek.
+  
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  over het algemeen ging dit goed:
+  maar bij slecht ziend heid zijn somige teksten klijn of moelijk leesbaar.
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  kleurenblindheid:
+  dit ging goed het enige punt dat ik zou verbeteren is:
+<img src="readme-images/goud.png" width="2em" alt="goud_item">
+de border valt hier weg ik zou hier een donkere border gebruiken zo dat het duidelijk is dat hij geselecteerd is.
+de oplosing zou een clas='goud' voor gebruiken de goude afbeeldingen komen over meerdere pagina's voor op random pleken
 </details>
 
 
@@ -226,16 +240,26 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Het is gelukt om de web pagina resonsive te maken, mobiel heeft nu een carosel
+<img src="readme-images/mobiel_sijl.png" width="2em" alt="mobiel_sijling">
+ik moet mijn tweede pagina nog afmaken de html is grotendeels klaar(er ontbreken een nog een paar afbeeldingen).
+daar naast wil ik nog een dark mode toevoegen. Ikk heb verder gewerkt aan de html en css van de tweede pagina nu moet ik nog:
+-controleren of dat ik alle secties een heading heb gegeven.
+-een dark mode maken
+-de re-load animatie maken
+-css en html valideren
+-Opmerkingen van Sane verwerken
+-brone lijst aanvullen
+-eindgesprek voorbereiden
+-document op github zetten
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | dit bespreken: mag ik tab index gebruiken om een afbeelding interactief te maken? | en dit             | en ik dit    | en dan ik dat    |
+  | en dat ook nog: ik heb een laad link waar ik de styling van rond wil laten draaien op het moment dat je er op klikt ik heb de code penetjes van week 3 bekeeken maar kom er zelf niet uit | dit als er tijd is: is mijn html nog steeds vies? ik wil graag schone html leren schrijven :) | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
@@ -285,7 +309,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
+  1. bron 1 code bron: oefening 13 https://codepen.io/shooft/pen/VwXXNea*/ (zie hompage_style.css)
   2. bron 2
   3. ...
 

@@ -18,10 +18,11 @@ button, summary {
 /*********************/
 :root {
 	/* startje */
-	--color-text:#cccccc;
+	--color-text:#ffffff;
 	--color-background:#212136;
 	--background-volt:#57575f;
 	--color-highlight:#ffce1f;
+	--color-navigatie:#121213;
 }
 
 
@@ -48,192 +49,105 @@ header{
 	margin-bottom: 1em;
 }
 header>a img{
-	min-width: 6em;
+	min-width: .125fr;
+	max-width: .125fr;
 }
 
-h1{
-	display: none;
-}
+.hide{
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}/*https://www.a11yproject.com/posts/how-to-hide-content/*/
 
 button{
 	background-color:var(--color-background);
-	border:none;
+	border:none
 }
-button:hover,select{
-	border: solid var(--color-text) .125em;
-}
-header>a:hover,select{
-	border: solid var(--color-text) .125em;
 
-	
+a{
+	color: var(--color-text);
+}
+
+button:hover{
+	border: solid var(--color-text) .125em;
+}
+button:focus{
+	border: solid var(--color-text) .125em;
+	transform: rotate(5deg);
+}
+
+:nth-child(n+3)>li img:hover{
+	border: solid var(--color-text) .125em;
+}
+ul>li img:focus{
+	border: solid var(--color-text) .125em;
+	transform: rotate(5deg);
+}
+
+
+a:hover{
+	border: solid var(--color-text) .125em;
+}
+
+a:focus{
+	border: solid var(--color-text) .125em;
+	transform: rotate(5deg);
 }
 header>ul{
-	display: none;
+	display:none;
+	position: fixed;
+	top: 3em;
+	height: 100%;
+	width: 16em;
+}
+header>ul>li{
+	background-color:var(--color-navigatie);
 }
 
-
-
-nav ul{/*hier start de styling voor de nav*/
-	display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap: 2em;
+header>ul.show{
+	display:inline;
+	position: fixed;
+	background-color:var(--color-navigatie);
 }
 
-nav>ul li{
-	display: grid;
-	grid-template-columns:5em 1fr 1fr 1fr 2fr;
-	grid-template-rows:1fr 1fr 1em;
-	grid-gap: .125em;
-}
+a:link { 
+	text-decoration: none;
+ }
 
-nav>ul li h2,h3,p{/*stijling personages*/
-	margin: 0;
-	margin-top: .5em;
-}
-
-nav>ul>:first-child{
-	background-image:url(../images/achtergrond-titan.jpg);
-	background-repeat: no-repeat;
-}
-nav>ul>:nth-child(2){
-	background-image:url(../images/achtergrond-warlock.jpg);
-	background-repeat: no-repeat;
-}
-nav>ul>:nth-child(3){
-	background-image:url(../images/achtergrond-hunter.jpg);
-	background-repeat: no-repeat;
-}
-nav>ul>:nth-child(4){
-	background:var(--background-volt);
-}
-
-nav>ul>li h2{
-grid-row:1;
-grid-column:2;
-}
-nav>ul>li p{
-grid-row:1;
-grid-column:4;
-}
-nav>ul>li h3{
-grid-row:2;
-grid-column:2;
-}
-
-nav>ul>:last-child :nth-child(1){/* stijling volt*/
-	grid-row:1;
-	grid-column:1;	
-}
-nav>ul>:last-child :nth-child(3){
-	grid-row:1;
-	grid-column:3;	
-}
-nav>ul>:last-child :nth-child(5){
-	grid-row:1;
-	grid-column:5;	
-}
-nav>ul>:last-child :nth-child(7){
-	grid-row:2;
-	grid-column:2;	
-}/*hier eindicht de styling voor de header*/
-
-
-
-
-
-
-
-/* star power berekening*/
-main>section{
-	display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr;
-	grid-gap: 2em;
-}
-main>section>ol{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: .125em;
-}
-
-main>section>ol>li{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: .125em;
-}
-/* eind power berekening*/
-
-
-
-main>:nth-child(4){/*inventory hoofd grid*/
-	grid-gap: 0;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-
-main>:nth-child(4) ul{/*inventory layout*/
-	display: grid;
-	grid-template-columns:4em 4em 4em 4em;
-	grid-template-rows:4em 4em 4em;
-	grid-gap:.25em;
-	margin-bottom: 1em;
-}
-main>:nth-child(4)>ul li{/*inventory li setings*/
+li{
 	list-style: none;
 }
-main>:nth-child(4)>ul>li>img{/*inventory img setings*/
-	min-width: 1em;
-	min-height: 1em;
-	max-width: 4em;
+header>a,button{
+	min-width: 8em;
+	max-width: 10em;
+}
+header>a>img{
+	max-width: 8em;
+}
+
+
+strong{
+	color:var(--color-highlight);
+	font-size: 1.2em;
+}
+
+header>:nth-child(4){
+	min-width: 4em;
+	max-width: 10em;
+	width: 4em;
+	height: 4em;
+	border-radius: 50%;
+	background-image: radial-gradient( var(--color-background) 50%, var(--color-text) 50%);
 	
 }
-
-main>:nth-child(4)>ul>li>img:hover,select{
-	transform: rotate(5deg);
-	border: solid rgb(224, 234, 188) .125em;
-	
+header>:nth-child(4)>div{
+	width: 1em;
+	height: 1em;
+	border-radius: 50%;
+	background-color: var(--color-highlight);
 }
 
-main>:nth-child(4)>ul>li:nth-child(5){/*inventory img positie*/
-	grid-column: 2;
-}
-main>:nth-child(4)>ul>li:nth-child(8){
-	grid-column:2 ;
-}
-
-main>:nth-child(4)>:nth-child(4){
-	grid-row: 2;
-	grid-column: 1;
-}
-main>:nth-child(4)>:nth-child(5){
-	grid-row: 2;
-	grid-column: 2;
-}
-main>:nth-child(4)>:nth-child(6){
-	grid-row: 2;
-	grid-column: 3;
-}
-main>:nth-child(4)>:nth-child(7){
-	grid-row: 3;
-	grid-column: 1;
-}
-main>:nth-child(4)>:nth-child(8){
-	grid-row: 3;
-	grid-column: 2;
-}
-main>:nth-child(4)>:nth-child(9){
-	grid-row: 3;
-	grid-column: 3;
-}
-
-main>:nth-child(4)>:nth-child(10){
-	grid-column: 4;
-	grid-row-start: 1;
-	grid-row-end: 3;
-}/*inventory img positie*/
-
-main>:nth-child(4):nth-child(10)>li:nth-child(5){/* vault grid layout*/
-	grid-column: 1;	
-}
-main>:nth-child(4)>:nth-child(10)>li:nth-child(8){
-	grid-column: 1;
-	grid-row: 2;
-}
