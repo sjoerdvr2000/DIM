@@ -74,28 +74,23 @@ a{
 
 button:hover{
 	border: solid var(--color-text) .125em;
+	overflow: visible;
 }
 button:focus{
 	border: solid var(--color-text) .125em;
 	transform: rotate(5deg);
+	overflow: visible;
 }
-
-:nth-child(n+3)>li img:hover{
-	border: solid var(--color-text) .125em;
-}
-ul>li img:focus{
-	border: solid var(--color-text) .125em;
-	transform: rotate(5deg);
-}
-
 
 a:hover{
 	border: solid var(--color-text) .125em;
+	overflow: visible;
 }
 
 a:focus{
 	border: solid var(--color-text) .125em;
 	transform: rotate(5deg);
+	overflow: visible;
 }
 header>ul{
 	display:none;
@@ -141,13 +136,15 @@ header>:nth-child(4){
 	width: 4em;
 	height: 4em;
 	border-radius: 50%;
-	background-image: radial-gradient( var(--color-background) 50%, var(--color-text) 50%);
+	background-image: radial-gradient( var(--color-background) 50%, var(--color-text) 50%);	
 	
 }
+
 header>:nth-child(4)>div{
 	width: 1em;
 	height: 1em;
 	border-radius: 50%;
 	background-color: var(--color-highlight);
 }
+
 

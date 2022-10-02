@@ -102,16 +102,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/groot_scherm.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/groot_scherm.PNG" width="375px" alt="breakdown van de hele pagina">
 
   ### de hele pagina mobiel: 
-  <img src="readme-images/mobile_scherm.png" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/mobile_scherm.PNG" width="375px" alt="breakdown van een dynamisch deel">
 
   ### navigatie groot scherm: 
-  <img src="readme-images/navigatie_groot.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/navigatie_groot.PNG" width="375px" alt="breakdown van nog een dynamisch deel">
 
   ### navigatie mobiel:
-  <img src="readme-images/navigatie_mobiel.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/navigatie_mobiel.PNG" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -225,7 +225,7 @@ mijn menu moet in de html meteen na de knop waar mee je hem opent anders is het 
 
   kleurenblindheid:
   dit ging goed het enige punt dat ik zou verbeteren is:
-<img src="readme-images/goud.png" width="2em" alt="goud_item">
+<img src="readme-images/goud.PNG" width="2em" alt="goud_item">
 de border valt hier weg ik zou hier een donkere border gebruiken zo dat het duidelijk is dat hij geselecteerd is.
 de oplosing zou een clas='goud' voor gebruiken de goude afbeeldingen komen over meerdere pagina's voor op random pleken
 </details>
@@ -241,7 +241,7 @@ de oplosing zou een clas='goud' voor gebruiken de goude afbeeldingen komen over 
 
   ### Stand van zaken
   Het is gelukt om de web pagina resonsive te maken, mobiel heeft nu een carosel
-<img src="readme-images/mobiel_sijl.png" width="375px" alt="mobiel_sijling">
+<img src="readme-images/mobiel_sijl.PNG" width="375px" alt="mobiel_sijling">
 ik moet mijn tweede pagina nog afmaken de html is grotendeels klaar(er ontbreken een nog een paar afbeeldingen).
 daar naast wil ik nog een dark mode toevoegen. Ikk heb verder gewerkt aan de html en css van de tweede pagina nu moet ik nog:
 -controleren of dat ik alle secties een heading heb gegeven.
@@ -266,9 +266,9 @@ daar naast wil ik nog een dark mode toevoegen. Ikk heb verder gewerkt aan de htm
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - punt de inventory afbeeldingen in een button zetten met een section er omheen werk een foldout menu uit en maak notitie van welke je hebt uit gewerkt. 
+  - punt zorg er voor dat al je sections een h hebben
+  - nog een punt maak de animatie af voor de laad knop triger load page
   - ...
 
 </details>
@@ -283,19 +283,30 @@ daar naast wil ik nog een dark mode toevoegen. Ikk heb verder gewerkt aan de htm
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/groot_scherm_home.PNG" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-image/medium_scherm_home.PNG" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/klijn_scherm_home.PNG" width="375px" alt="uitomst opdracht 1">
 
+  <img src="readme-images/groot_scherm_loadouts.PNG" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/medium_scherm_loadouts.PNG" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/klijn_scherm_loadouts.PNG" width="375px" alt="uitomst opdracht 1">
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
+  Het gebruiken van media qweries en grid en flex box ging goed ik heb het gevoel dat ik hier veel voort gang in heb gemaakt.
+  Zo heb ik in de onderstaande foto's media qweries flexbox en grid gebruikt om op bepaalde schermgrootes het beeld te laten verspringen 
+  om zo gebruik te maken van de ruimte van het beeld en altijd de inforamtie leesbaar te houden.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/voorbeeld1_responsive.PNG" width="375px" alt="top">
+  <img src="readme-images/voorbeeld2_responsive.PNG" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
+  Ik wouw de onderstaande afbeelding animeren zo dat die zo dra de pagina gelaaden was zou gaan rond draaien dit is me niet gelukt en ik wil 
+  in de toekomst meer oefenen met css animties en jss.
+  <img src="readme-images/voorbeeld4.PNG" width="2em" alt="bummer">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
 
 
