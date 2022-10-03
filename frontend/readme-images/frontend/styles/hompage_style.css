@@ -1,0 +1,384 @@
+main{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 2em;
+}
+main>section{
+	display: grid;
+	grid-template-rows:.04fr .04fr .1fr .1fr .1fr; 
+	grid-gap: 2em;
+	
+}
+section>:nth-child(2) li{
+	display: grid;
+	grid-template-columns:6em 4em 4em 4em 2em;
+	grid-template-rows:1fr 1fr .125fr;
+	grid-gap: .125em;
+}
+
+section>:nth-child(2) li h2,h3,p{/*stijling personages*/
+	margin: 0;
+	margin-top: .5em;
+}
+
+:nth-child(n+4)>li img:hover{
+	border: solid var(--color-text) .125em;
+}
+
+main>:nth-child(2)>:nth-child(2)>li{/*banners titan*/
+	background-image:url(../images/achtergrond-titan.jpg);
+	background-repeat: no-repeat;
+}
+main>:nth-child(3)>:nth-child(2)>li{/*banners warlock*/
+	background-image:url(../images/achtergrond-warlock.jpg);
+	background-repeat: no-repeat;
+}
+main>:nth-child(4)>:nth-child(2)>li{/*banners hunter*/
+	background-image:url(../images/achtergrond-hunter.jpg);
+	background-repeat: no-repeat;
+}
+main>:nth-child(5)>:nth-child(2)>li{/*banners vault*/
+	background:var(--background-volt);
+}
+
+section>:nth-child(2)>li h2{
+grid-row:1;
+grid-column:2;
+}
+section>:nth-child(2)>li p{
+grid-row:1;
+grid-column:4;
+}
+section>:nth-child(2)>li h3{
+grid-row:2;
+grid-column:2;
+}/*stijling personages*/
+
+main>:nth-child(5)>:nth-child(2)>li :first-child{/* stijling vault*/
+	grid-row:1;
+	grid-column:1;	
+}
+main>:nth-child(5)>:nth-child(2)>li :nth-child(3){
+	grid-row:1;
+	grid-column:3;	
+}
+main>:nth-child(5)>:nth-child(2)>li :nth-child(5){
+	grid-row:1;
+	grid-column:5;	
+}
+main>:nth-child(5)>:nth-child(2)>li :nth-child(7){
+	grid-row:2;
+	grid-column:2;	
+}/* stijling vault*/
+
+
+
+section>:nth-child(n+4){/*inventory grid*/
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-gap: .5em;
+}
+main>:nth-child(5)>:last-child{
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-gap: .5em;
+}
+
+section>:nth-child(n+4)>li>section>button>img{
+	max-width: 7em;
+}
+main>:nth-child(5)>:nth-child(3)>li>section>button>img{
+	max-width: 7em;
+}
+section>:nth-child(n+4)>li>section>button{
+	min-width: 9em;
+	min-height: 9em;
+}
+main>:nth-child(5)>:nth-child(3)>li>section>button{
+	min-width: 9em;
+	min-height: 9em;
+}
+
+main>:nth-child(5)>:nth-child(2) img{
+	max-width: 1.5em;
+}
+/*inventory grid*/
+
+
+
+main>section>ol{/*power berekening*/
+	display: grid;
+	grid-template-columns:8em 8em 8em;
+	grid-gap: .125em;
+}
+
+main>section>ol>li{
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	grid-gap: .125em;
+}
+main>section>ol>li>img{
+max-width: 3em;
+min-width: 1.75em;
+margin: .125em;
+}/*power berekening*/
+
+/* hier begint code voor de item informatie moet uitvouwen!*/
+section>:nth-child(n+4)>li>section>section{
+	display: none;
+}
+section>:nth-child(n+4)>li>section ul button{
+	min-width: 4em;
+	min-height: 4em;
+}
+article{
+	display: grid;
+	grid-template-columns: 10em 2em 2em;
+	grid-template-rows: 3em 3em 6em 8em 6em 2em 2em;
+	grid-gap: 1em;
+}
+
+article img{
+	max-width: 2em;
+}
+article>:nth-child(2){
+	grid-row: 2;
+	grid-column: 1;
+}
+
+article>:nth-child(3){
+	grid-row: 2;
+	grid-column: 2;
+}
+article>:nth-child(4){
+	grid-row: 2;
+	grid-column: 3;
+}
+article>:nth-child(5){
+	grid-row: 3;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+article>:nth-child(6){
+	grid-row:5;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	display: grid;
+	grid-template-columns:5em 5em 5em 5em ;
+	grid-template-rows:2em 2em  5em;
+	grid-gap: .125em;
+}
+
+article>:nth-child(6)>:first-child{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row: 1;
+}
+article>:nth-child(6)>:nth-child(2){
+	grid-column: 3;
+	grid-row: 1;
+}
+article>:nth-child(6)>:nth-child(3){
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row: 2;
+}
+article>:nth-child(6)>:nth-child(4){
+	grid-column:1;
+	grid-row:3;
+}
+article>:nth-child(6)>:nth-child(5){
+	grid-column:2;
+	grid-row:3;
+}
+article>:nth-child(6)>:nth-child(6){
+	grid-column:3;
+	grid-row:3;
+}
+article>:nth-child(6)>:nth-child(7){
+	grid-column:4;
+	grid-row:3;
+}
+article>:nth-child(6)>button{
+	min-width: 5em;
+	max-width:5em;
+	min-height: 5em;
+	max-height: 5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+article>:nth-child(6)>:nth-child(n+4) img{
+	max-width: 4em;
+	padding: 0%;
+}
+
+article>:nth-child(7){
+	grid-row:6;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+
+
+
+
+section>:nth-child(n+4)>li>section>section>section{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+section>:nth-child(n+4)>li>section>section>section li{
+	display:block;
+}
+section>:nth-child(n+4)>li>section>section>section>:nth-child(n+3){
+	display: grid;
+	grid-template-rows: 5em 5em;
+	grid-template-columns: none;
+	align-items: center;
+}
+section>:nth-child(n+4)>li>section>section>section>:nth-child(n+3) h3{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+
+
+
+section>:nth-child(n+4)>li>section>section>section>:nth-child(n+3) ul{
+display: flex;
+flex-direction: row;
+gap: .25em;
+}
+
+
+section>:nth-child(n+4)>li>section>section.visable{/*gaat worden gebruikt om de foldout zichtbaar te maken*/
+	background-color: var(--background-volt);
+	display: block;
+	display: grid;
+	grid-template-columns: 15em 20em;
+	grid-gap: .25em;
+    position: absolute;
+	top: 24.4em;
+	left: 10em;
+}
+/*media qwerie start*/
+
+
+@media all and (max-width: 1700px){
+	
+	main {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: .5fr .5fr;
+    	grid-gap: 6em;
+	} 
+	main>:nth-child(5){
+		grid-row: 2;
+		grid-column: 1;
+	}
+	main>:nth-child(n+4){
+		min-width: 20em;
+	}
+}
+
+@media all and (max-width: 1375px){
+	
+	main {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: .5fr .5fr;
+    	grid-gap: 6em;
+	} 
+	main>:nth-child(4){
+		grid-row: 2;
+		grid-column: 1;
+	}
+
+	main>:nth-child(5){
+		grid-row: 2;
+		grid-column: 2;
+	}
+	main>:nth-child(n+4){
+		min-width: 20em;
+	}
+}
+
+
+
+
+@media all and (max-width: 720px){
+
+	header>a,button{
+		min-width: 6em;
+		max-width: 8em;
+	}
+	header>a>img{
+		max-width: 8em;
+	}
+	
+	main {
+		grid-template-columns: 120% 120% 120% 120%;
+    	grid-gap: 6em;
+		overflow-x:auto;/*code bron: oefening 13 https://codepen.io/shooft/pen/VwXXNea*/
+		scroll-snap-type: x mandatory;
+		overscroll-behavior: contain auto;
+		-webkit-overflow-scrolling: touch;/*laat de intesiteid van de swipe bepalen hover je door de carocel gaat*/
+	} /*code bron: oefening 13 https://codepen.io/shooft/pen/VwXXNea*/
+	main>:nth-child(5){
+		grid-row: 1;
+		grid-column: 4;
+	}
+	main>:nth-child(4){
+		grid-row: 1;
+		grid-column: 3;
+	}
+
+	main>section{/*code bron: oefening 13 https://codepen.io/shooft/pen/VwXXNea*/
+		scroll-snap-align: center;
+	}/*code bron: oefening 13 https://codepen.io/shooft/pen/VwXXNea*/
+
+	section>:nth-child(n+4)>li>button>img{
+		max-width: 4em;
+	}
+	main>:nth-child(5)>:nth-child(3)>li>button>img{
+		max-width: 4em;
+	}
+	section>:nth-child(n+4)>li>button{
+		max-width:4.5em;
+	}
+
+	main>:nth-child(5)>:nth-child(3)>li>button{
+		max-width:4.5em;
+	}
+	section>:nth-child(n+4) {
+		grid-template-columns: 4em 4em 4em 4em;
+		grid-template-rows: 4em 4em 4em 4em;
+	}
+	main>:nth-child(5)>:nth-child(3) {
+		grid-template-columns:4em 4em 4em 4em ;
+		grid-template-rows: 4em 4em 4em 4em 4em 4em 4em;
+	}
+
+	section>:nth-child(n+4) {
+		grid-gap: 2.7em;
+	}
+	section>:nth-child(n+4)>li>section>section.visable{/*gaat worden gebruikt om de foldout zichtbaar te maken*/
+		top: 30.4em;
+		left:1em;
+		display: flex;
+		flex-direction: column-reverse;
+		min-width: 25em;
+		justify-content: center;
+		align-items: center;
+	}
+
+	article{
+		grid-row: 1;
+	}
+	section>:nth-child(n+4)>li>section>section>section{
+		grid-row: 2;
+	}
+}
