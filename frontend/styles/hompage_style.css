@@ -100,6 +100,10 @@ main>:nth-child(5)>:nth-child(3)>li>section>button{
 	min-width: 9em;
 	min-height: 9em;
 }
+
+main>:nth-child(5)>:nth-child(2) img{
+	max-width: 1.5em;
+}
 /*inventory grid*/
 
 

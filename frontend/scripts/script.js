@@ -1,5 +1,5 @@
 // JavaScript Document
-var menu_button = document.querySelector('header:first-child')
+var menu_button = document.querySelector('header:first-child>:first-child')
 menu_button.addEventListener("click", menu_button_klik);
 
 function menu_button_klik() {

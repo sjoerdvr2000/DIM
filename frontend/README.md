@@ -225,7 +225,7 @@ mijn menu moet in de html meteen na de knop waar mee je hem opent anders is het 
 
   kleurenblindheid:
   dit ging goed het enige punt dat ik zou verbeteren is:
-<img src="readme-images/goud.PNG" width="2em" alt="goud_item">
+<img src="readme-images/goud.PNG" width="10em" alt="goud_item">
 de border valt hier weg ik zou hier een donkere border gebruiken zo dat het duidelijk is dat hij geselecteerd is.
 de oplosing zou een clas='goud' voor gebruiken de goude afbeeldingen komen over meerdere pagina's voor op random pleken
 </details>
@@ -284,7 +284,7 @@ daar naast wil ik nog een dark mode toevoegen. Ikk heb verder gewerkt aan de htm
 
   ### Je uitkomst - karakteristiek screenshots:
   <img src="readme-images/groot_scherm_home.PNG" width="375px" alt="uitomst opdracht 1">
-  <img src="readme-image/medium_scherm_home.PNG" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/medium_scherm_home.PNG" width="375px" alt="uitomst opdracht 1">
   <img src="readme-images/klijn_scherm_home.PNG" width="375px" alt="uitomst opdracht 1">
 
   <img src="readme-images/groot_scherm_loadouts.PNG" width="375px" alt="uitomst opdracht 1">
@@ -305,7 +305,7 @@ daar naast wil ik nog een dark mode toevoegen. Ikk heb verder gewerkt aan de htm
   Korte omschrijving met plaatjes
   Ik wouw de onderstaande afbeelding animeren zo dat die zo dra de pagina gelaaden was zou gaan rond draaien dit is me niet gelukt en ik wil 
   in de toekomst meer oefenen met css animties en jss.
-  <img src="readme-images/voorbeeld4.PNG" width="2em" alt="bummer">
+  <img src="readme-images/voorbeeld4.PNG" width="10em" alt="bummer">
 
 </details>
 
@@ -321,7 +321,8 @@ daar naast wil ik nog een dark mode toevoegen. Ikk heb verder gewerkt aan de htm
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
   1. bron 1 code bron: oefening 13 https://codepen.io/shooft/pen/VwXXNea*/ (zie hompage_style.css)
-  2. bron 2
-  3. ...
+  2. bron 2 https://developer.mozilla.org/en-US/docs/Web/CSS/position (door gelezen niet direct overgenomen)
+  3. bron 3 https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-overflow-scrolling (om uit te zoeken hoe je een carosel maakt in html en css zie ook bron 1)
+  4. bron 4 https://github.com/DestinyItemManager/DIM/ (not activly used but intresting)
 
 </details>
